@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 # -----------------------------
 # MongoDB Connection
+# MongoDB Atlas Configuration
 # -----------------------------
 MONGO_URI = "mongodb+srv://shaktig101101_db_user:C1yoWqhkEj5muHcL@cluster0.sofmx8o.mongodb.net/"
 # Replace <db_password> with your actual password
@@ -26,7 +27,7 @@ def home():
 @app.route("/gettodoitems", methods=["GET"])
 def get_todo_items():
     try:
-        items = list(collection.find({}, {"_id": 0}))  # _id हटाया ताकि साफ JSON मिले
+        items = list(collection.find({}, {"_id": 0}))  
         return jsonify(items), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -52,7 +53,6 @@ def submit_todo_item():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
 
 # -----------------------------
 # Run Application
