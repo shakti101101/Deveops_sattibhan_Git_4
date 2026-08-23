@@ -2,12 +2,12 @@
     {
         "id": 1,
         "name": "abhijeet",
-        "course": "Advanced Python"
+        "course": "Java"
     },
     {
         "id": 2,
-        "name": "akshay",
-        "course": "Flask"
+        "name": "ravi",
+        "course": "MEAN"
     },
     {
         "id": 3,
