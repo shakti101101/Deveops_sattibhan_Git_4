@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "name": "Rahul",
+        "name": "abhijeet",
         "course": "Advanced Python"
     },
     {
         "id": 2,
-        "name": "Priya",
+        "name": "akshay",
         "course": "Flask"
     },
     {
         "id": 3,
-        "name": "Amit",
+        "name": "ram",
         "course": "Flask"
     },
     {
