@@ -27,7 +27,7 @@ def home():
 @app.route("/gettodoitems", methods=["GET"])
 def get_todo_items():
     try:
-        items = list(collection.find({}, {"_id": 0}))  # _id हटाया ताकि साफ JSON मिले
+        items = list(collection.find({}, {"_id": 0}))  
         return jsonify(items), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
